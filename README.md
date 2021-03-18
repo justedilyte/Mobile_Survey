@@ -1,5 +1,3 @@
-# Mobile_Survey
-
 ## A Simple Design for a Small Mobile Survey
 
 ### Parts of the Survey:
@@ -23,10 +21,52 @@ In order to view the survey, open the `index.html` file in your browser and if i
 
 # The Survey Design
 
-`index.html` **Welcome Page**
+**Welcome Page -** `index.html`
 
 ![Welcome Page Screenshot](screenshots/index.png)
 
-`question_1.html` **Question 1**
+**Question 1 -** `question_1.html`
 
 ![Question 1 Screenshot](screenshots/question_1.png)
+
+**Question 2 -** `question_2.html`
+
+![Question 2 Screenshot](screenshots/question_2.png)
+
+**Question 3 -** `question_3.html`
+
+![Question 3 Screenshot](screenshots/question_3.png)
+
+**Question 4 -** `question_4.html`
+
+![Question 4 Screenshot](screenshots/question_4.png)
+
+**Thank You Page -** `thank_you.html`
+
+![Thank You Page Screenshot](screenshots/thank_you.png)
+
+# Reflections
+
+The design was intended to be made as simple as possible, so that the user could concentrate on the survey's questions instead of the distracting details of the design.
+
+The Design is responsive and can adapt to any screen size, including mobile phones and tablets.
+
+### Colors
+
+Colors have been picked to be pastel and quite minimalistic with only a few brighter details to better redirect user's attention. 
+
+All colors are stored in the `css/style.css` stylesheet as the root values and therefore can easily be changed for the whole survey.
+
+### Limitations
+
+This survey prototype has been built by using only pure `HTML` and `CSS`, thus it lacks some functionalities that could be easily improved by implementing `JavaScript`.
+
+    *Some of such possible improvements:*
+
+    + Disabling the `Next` button until the required amount of answers has been selected/filed in order to prevent the user from skipping the questions without properly answering them.
+
+    + If the question contains the option of `None of the above` or similar (like seen in Question 2), by selecting it, all previously selected choices in that section should be unselected. Otherwise it allows the user to provide contradictory answers.
+
+    + Visually moving progress bar. Currently the progress bar is hard to notice, since it updates its progress with every page, without the update process being visible. The ability to see your progress bar increasing via animation could be a part of a more ex citing and pleasant experience for the user.
+
+    + COMMENT !!! ??? 
