@@ -17,7 +17,7 @@
 
 ### View of the Survey
 
-In order to view the survey, open the `index.html` file in your browser and if it has been opened from your local directory in which you have cloned full repository, you should be able to move between the pages via main `Next` and `Back` buttons.
+In order to view the survey, clone this repository to you local device and open the `index.html` file in your browser. If it has been opened from your local directory in which you have cloned the full repository, you should be able to move between the pages via main `Next` and `Back` buttons.
 
 # The Survey Design
 
@@ -49,7 +49,7 @@ In order to view the survey, open the `index.html` file in your browser and if i
 
 The design was intended to be made as simple as possible, so that the user could concentrate on the survey's questions instead of the distracting details of the design.
 
-The Design is responsive and can adapt to any screen size, including mobile phones and tablets.
+Design is responsive and can adapt to any screen size, including mobile phones and tablets.
 
 ### Colors
 
@@ -61,12 +61,12 @@ All colors are stored in the `css/style.css` stylesheet as the root values and t
 
 This survey prototype has been built by using only pure `HTML` and `CSS`, thus it lacks some functionalities that could be easily improved by implementing `JavaScript`.
 
-    *Some of such possible improvements:*
+**Some of such possible improvements:**
 
-    + Disabling the `Next` button until the required amount of answers has been selected/filed in order to prevent the user from skipping the questions without properly answering them.
++ Disabling the `Next` button until the required amount of answers has been selected/filed in order to prevent the user from skipping the questions without properly answering them.
 
-    + If the question contains the option of `None of the above` or similar (like seen in Question 2), by selecting it, all previously selected choices in that section should be unselected. Otherwise it allows the user to provide contradictory answers.
++ If the question contains the option of `None of the above` or similar (like seen in Question 2), by selecting it, all previously selected choices in that section should be unselected. Otherwise it allows the user to provide contradictory answers.
 
-    + Visually moving progress bar. Currently the progress bar is hard to notice, since it updates its progress with every page, without the update process being visible. The ability to see your progress bar increasing via animation could be a part of a more ex citing and pleasant experience for the user.
++ Visually moving progress bar. Currently the progress bar is hard to notice, since it updates its progress with every page, without the update process being visible. The ability to see your progress bar increasing via animation could be a part of a more ex citing and pleasant experience for the user.
 
-    + COMMENT !!! ??? 
++ COMMENT !!! ??? 
