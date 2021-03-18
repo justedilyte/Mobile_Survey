@@ -1,0 +1,210 @@
+
+/*==================================================
+            ROOT VARIABLES FOR ALL COLORS        
+==================================================*/
+
+:root {
+    /* Main elements */
+    --background: rgb(215, 219, 224);
+    --frame: rgb(238, 238, 238);
+    --frame-filling: white;
+    --horizontal-line: rgb(151, 151, 151);
+
+    /* Progress bar */
+    --progress-bar-completed: rgb(224, 233, 229);
+    --progress-bar-remaining: rgb(247, 247, 247);
+
+    /* Fonts */
+    --title: rgb(70, 167, 114);
+    --question: black;
+    --text: black;
+
+    /* Choice buttons (Questions 1 & 2) */
+    --button-choice-background: rgb(240, 245, 243);
+    --button-choice-background-active: rgb(207, 228, 220);
+    --button-choice-text: black;
+    --button-choice-text-active: black;
+
+    /* Text input (Question 3) */
+    --text-input-area: rgb(240, 245, 243);
+
+    /* Matrix table (Question 4) */
+    --table-rows: rgb(240, 245, 243);
+    --table-radios: white;
+    --table-radios-hover: rgb(195, 211, 202);;
+    --table-radios-active: rgb(70, 167, 114);
+
+    /* 'Next' button */
+    --button-next-background: rgb(135, 212, 180);
+    --button-next-background-active: rgb(80, 206, 154);
+    --button-next-text: white;
+    --button-next-text-active: white;
+    
+    /* 'Back' button */
+    --button-back-background: rgb(202, 200, 200);
+    --button-back-background-active: rgb(160, 160, 160);
+    --button-back-text: white;
+    --button-back-text-active: white;
+  }
+
+/*________________________________________________________________________*/
+
+
+/* Main elements ---------------------------------*/
+body {
+    background-color: var(--background);
+}
+
+hr {
+    color: var(--horizontal-line);
+}
+
+.border {
+    background-color: var(--frame-filling);
+    border-color: var(--frame) !important;
+    border-width: 10px !important;
+    border-radius: 40px;
+    padding: 50px;
+    margin: 5% 0% 5% 0%;
+    text-align: justify;
+}
+
+/* Progress bar ----------------------------------*/
+.progress {
+    margin: 0 -50px 0 -50px;
+    border-radius: 0;
+    background-color: var(--progress-bar-remaining);
+}
+
+.progress-bar {
+    background-color: var(--progress-bar-completed);
+}
+
+/* Fonts -----------------------------------------*/
+h1 {
+    font-size: 30px;
+    color: var(--title);
+}
+
+h2 {
+    font-size: 22px;
+    color: var(--question);
+}
+
+p {
+    font-size: 16px;
+    color: var(--text);
+}
+
+/* Choice buttons --------------------------------*/
+.choice-list {
+    margin: 0 -50px 0 -50px;
+}
+
+.btn-choice {
+    background-color: var(--button-choice-background);
+    color: var(--button-choice-text);
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -10px 0px -10px 0px;
+    height: 50px;
+    width: 100%;
+}
+
+.btn-choice:hover, .btn-check:active+.btn-choice, .btn-check:checked+.btn-choice, 
+.btn-choice.active, .btn-choice:active, .show>.btn-choice.dropdown-toggle {
+    background-color: var(--button-choice-background-active) !important;
+    color: var(--button-choice-text-active) !important;
+}
+
+/* Choice buttons with images --------------------*/
+.image-choice-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.image-btn-choice {
+    background-color: var(--button-choice-background);
+    color: var(--button-choice-text);
+    transition: 0.5s;
+    width: 30%;
+    margin: 5px 5px 5px 5px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-btn-choice:hover, .btn-check:active+.image-btn-choice, .btn-check:checked+.image-btn-choice, 
+.image-btn-choice.active, .image-btn-choice:active, .show>.image-btn-choice.dropdown-toggle {
+    background-color: var(--button-choice-background-active) !important;
+    color: var(--button-choice-text-active) !important;
+}
+
+/* Text input ------------------------------------*/
+.form-floating {
+    width: 60%;
+}
+
+.form-control, .form-control:focus {
+    height: 100% !important;
+    resize: none;
+    border: none;
+    background-color: var(--text-input-area);
+}
+
+/* Matrix table ----------------------------------*/
+.table {
+    margin: 0 -50px 0 -50px;
+    width: fit-content;
+}
+
+tbody > tr {
+    background-color: var(--table-rows);
+}
+
+thead > tr > th, td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.form-check-input {
+    background-color: var(--table-radios);
+    transition: 0.5s;
+}
+
+.form-check-input:hover {
+    cursor: pointer;
+    background-color: var(--table-radios-hover);
+}
+
+.form-check-input:checked {
+    background-color: var(--table-radios-active);
+    border-color: var(--table-radios-active);
+}
+
+/* 'Next' button ---------------------------------*/
+.btn-next {
+    background-color: var(--button-next-background);
+    color: var(--button-next-text);
+    transition: 0.5s;
+}
+
+.btn-next:hover {
+    background-color: var(--button-next-background-active);
+    color: var(--button-next-text-active);
+}
+
+/* 'Back' button ---------------------------------*/
+.btn-back {
+    background-color: var(--button-back-background);
+    color: var(--button-back-text);
+    transition: 0.5s;
+}
+
+.btn-back:hover {
+    background-color: var(--button-back-background-active);
+    color: var(--button-back-text-active);
+}
